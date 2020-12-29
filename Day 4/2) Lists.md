@@ -12,6 +12,8 @@
   - All states are related to each other. 
   - You can place states in certain order. 
   
+  
+  
 ## List
 - Set of square brackets with many items stored inside.
 - The items can be any data type.
@@ -19,6 +21,8 @@
 EX:
 
     fruits = [item1, item2, item3]
+
+
 
 ## United States 
 ### WITHOUT LISTS
@@ -28,6 +32,8 @@ state3 = "New Jersey"
 
 food1 = "Strawberries"
 food2 = "Spinach"
+
+print(f"{state1}, {state2}, {state3}, {food1}, {food2}\n\n\n")
 
 
 ### WITH LISTS
