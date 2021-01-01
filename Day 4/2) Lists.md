@@ -1,4 +1,7 @@
 # Python List Data Structure
+# CODE
+https://repl.it/@JeffreyV/day-4-list-practice
+
 
 - Data structure: A way of organizing and storing data. 
 - Storing single pieces of data is done with *variables*.
@@ -25,7 +28,19 @@ EX:
 
 
 
+# Nested List
+
+      #dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries" "Pears", "Tomatoes", "Celery", "Potatoes"]
+
+      # Make a Nested List to separate fruits & vegetables
+
+      fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+
+      vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+      dirty_dozen = [fruits, vegetables]
+
+      print(dirty_dozen)
 
 
-# CODE
-https://repl.it/@JeffreyV/day-4-list-practice
+
