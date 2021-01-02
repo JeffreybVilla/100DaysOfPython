@@ -1,3 +1,20 @@
+"""" 
+DON'T USE len() or sum() functions. Use for loops.
+
+prints the number of inputs entered
+print(len(student_heights))
+
+prints sum of all inputs entered
+print(sum(student_heights))
+
+total_height = sum(student_heights)
+number_of_students = len(student_heights)
+average_height = round(total_height / number_of_students)
+print(average_height)
+"""
+
+
+
 student_heights = input("Input a list of student heights in centimeters").split()
 for n in range(0, len(student_heights)):
   student_heights[n] = int(student_heights[n])
