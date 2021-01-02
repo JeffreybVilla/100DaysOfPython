@@ -2,6 +2,12 @@
 
 ## For Loop
 
-for item in list_of_itiems:
-  #Do something
-  
+- Used to iterate over a sequence of items.
+- Implemented using the reserved keyword **for**.
+- for-loop code is executed for each *element* of the sequence.
+- Get out of the for loop using the **break** statement.
+- Use **continue** statement to skip the execution of the code in the for loop for an element.
+- Python for loop is different from other programming languages as it behaves more like an **iterator**.
+- Use for loop to iterate over **Tuple**, **List**, **Set**, or **String**.
+  - All of these objects are a sequence in Python.
+- We can have **nested for loops** to iterate over a sequence of sequences. 
