@@ -28,3 +28,18 @@
 ### String
 - Python string is a sequence of characters. 
 - Program to print the index and character in a string.
+
+      message = "Hello"
+
+      count = 0
+      for character in message:
+          print(f'Index:{count}, Character:{character}')
+          count += 1
+    
+Output: 
+
+    Index:0, Character: H
+    Index:1, Character: e
+    Index:2, Character: l
+    Index:3, Character: l
+    Index:4, Character: o
