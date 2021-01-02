@@ -20,3 +20,11 @@
   
 ## Flow Diagram of for Loop
 ![](https://github.com/JeffLoboz/100DaysOfPython/blob/main/images/for-loop-flow-diagram.jpg)
+
+
+## for Loop Examples
+- Examples of for loop with different types of sequences.
+
+### String
+- Python string is a sequence of characters. 
+- Program to print the index and character in a string.
