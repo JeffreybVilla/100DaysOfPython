@@ -22,8 +22,12 @@
 ![](https://github.com/JeffLoboz/100DaysOfPython/blob/main/images/for-loop-flow-diagram.jpg)
 
 
+
+
+
 ## for Loop Examples
 - Examples of for loop with different types of sequences.
+
 
 
 ### String
@@ -46,6 +50,7 @@ Output:
     Index:4, Character: o
 
 
+
 ### for Loop with range() function
 - range() function generates a sequence of numbers.
 - Use with for loop to execute a code block for a specific number of times.
@@ -61,3 +66,6 @@ Output:
     Processing for loop: 2
     Processing for loop: 3
     Processing for loop: 4
+
+
+
