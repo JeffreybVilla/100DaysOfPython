@@ -15,15 +15,15 @@ https://www.askpython.com/python/python-functions
 
 
 ## How to Define a Function?
-- Use **def** keyword to define a function.
-- def function_name(arguments):
-      # code statements
+    - Use **def** keyword to define a function.
+    - def function_name(arguments):
+          # code statements
 
-"""
-def hello():
-  print("Hello World!")
+    """
+    def hello():
+      print("Hello World!")
 
-def add(x, y):
-  print(f"arguments are {x} and {y}")
-  return x + y
-"""
+    def add(x, y):
+      print(f"arguments are {x} and {y}")
+      return x + y
+    """
