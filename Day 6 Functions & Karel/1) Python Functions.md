@@ -1,7 +1,7 @@
-# Python Functions
 https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Alone&url=worlds%2Ftutorial_en%2Falone.json
 https://www.askpython.com/python/python-functions
 
+# Python Functions
     - A function is a block of code with a name.
     - We can call a function by its name. 
     - The code inside a function only runs when it's called.
@@ -27,3 +27,11 @@ https://www.askpython.com/python/python-functions
       print(f"arguments are {x} and {y}")
       return x + y
     """
+
+    ![](https://github.com/JeffLoboz/100DaysOfPython/blob/main/images/python-functions.png)
+
+
+
+## How to Call a Function in Python?
+- Call a function by its name.
+- If the function accepts parameters, we have to pass them while calling the function. 
