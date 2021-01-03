@@ -28,7 +28,7 @@ https://www.askpython.com/python/python-functions
       return x + y
     """
 
-    ![](https://github.com/JeffLoboz/100DaysOfPython/blob/main/images/python-functions.png)
+![](https://github.com/JeffLoboz/100DaysOfPython/blob/main/images/python-functions.png)
 
 
 
