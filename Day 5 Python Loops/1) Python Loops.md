@@ -15,15 +15,18 @@
         ## for Loop Syntax
         - Uses  **in** operator to iterate over the elementes in the sequence.
 
-              for element in sequence::
-                # for statement code block
-  
+        ```
+        for element in sequence::
+        # for statement code block
+        ```
+
+
 ## Flow Diagram of for Loop
 ![](https://github.com/JeffLoboz/100DaysOfPython/blob/main/images/for-loop-flow-diagram.jpg)
 
 
 
-----------------------------------------------------------------------------------------------------------------
+
 
 
 
