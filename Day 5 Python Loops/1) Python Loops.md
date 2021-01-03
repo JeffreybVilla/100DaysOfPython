@@ -74,54 +74,54 @@
         ```
 
 ## for Loop with range() function
-- range() function generates a sequence of numbers.
-- Use with for loop to execute a code block for a specific number of times.
-- We will try with for loop to execute a code block 5 times. 
+        - range() function generates a sequence of numbers.
+        - Use with for loop to execute a code block for a specific number of times.
+        - We will try with for loop to execute a code block 5 times. 
 
-      for i in range(5):
+        CODE:
+        for i in range(5):
           print("Processing for loop:", i)
+        
 
-Output:
+        Output:
+        Processing for loop: 0
+        Processing for loop: 1
+        Processing for loop: 2
+        Processing for loop: 3
+        Processing for loop: 4
+        
 
-    Processing for loop: 0
-    Processing for loop: 1
-    Processing for loop: 2
-    Processing for loop: 3
-    Processing for loop: 4
+        - Can also loop within a range of numbers
+        
+       CODE:
+        #Will print numbers 1-10
+        for number in range(1,11):
+          print(number)
+        
 
-----------------------------------------------------------------------------------------------------------------
+        Output:
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
 
-- Can also loop within a range of numbers
 
-      #Will print numbers 1-10
-      for number in range(1,11):
+        - Can also print within range and step with different amounts
+        
+        CODE:
+        #Will print numbers 1-10 and step 3 times
+        for number in range(1,11, 3):
           print(number)
 
-Output:
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-
-----------------------------------------------------------------------------------------------------------------
-
-- Can also print within range and step with different amounts
-
-      #Will print numbers 1-10 and step 3 times
-      for number in range(1,11, 3):
-          print(number)
-    
-Output:
-
-    1
-    4
-    7
-    10
-a
+        Output:
+        1
+        4
+        7
+        10
