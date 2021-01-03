@@ -67,5 +67,35 @@ Output:
     Processing for loop: 3
     Processing for loop: 4
 
+- Can also loop within a range of numbers
 
+      #Will print numbers 1-10
+      for number in range(1,11):
+          print(number)
+
+Output:
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+
+- Can also print within range and step with different amounts
+
+      #Will print numbers 1-10 and step 3 times
+      for number in range(1,11, 3):
+          print(number)
+    
+Output:
+
+    1
+    4
+    7
+    10
 
