@@ -25,12 +25,12 @@
 
 
 
-## for Loop Examples
+# for Loop Examples
 - Examples of for loop with different types of sequences.
 
 
 
-### String
+## String
 - Python string is a sequence of characters. 
 - Program to print the index and character in a string.
 
@@ -51,7 +51,7 @@ Output:
 
 
 
-### for Loop with range() function
+## for Loop with range() function
 - range() function generates a sequence of numbers.
 - Use with for loop to execute a code block for a specific number of times.
 - We will try with for loop to execute a code block 5 times. 
