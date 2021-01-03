@@ -99,9 +99,9 @@ Output:
           print(number)
     
 Output:
-
-    1
-    4
-    7
-    10
-
+'''
+1
+4
+7
+10
+'''
