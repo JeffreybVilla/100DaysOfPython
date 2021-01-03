@@ -25,6 +25,7 @@
 ## for Loop Examples
 - Examples of for loop with different types of sequences.
 
+
 ### String
 - Python string is a sequence of characters. 
 - Program to print the index and character in a string.
@@ -43,3 +44,20 @@ Output:
     Index:2, Character: l
     Index:3, Character: l
     Index:4, Character: o
+
+
+### for Loop with range() function
+- range() function generates a sequence of numbers.
+- Use with for loop to execute a code block for a specific number of times.
+- We will try with for loop to execute a code block 5 times. 
+
+      for i in range(5):
+          print("Processing for loop:", i)
+
+Output:
+
+    Processing for loop: 0
+    Processing for loop: 1
+    Processing for loop: 2
+    Processing for loop: 3
+    Processing for loop: 4
