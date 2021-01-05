@@ -1,3 +1,4 @@
+# Solution 1
     def move_forward():
         if front_is_clear():
             move()
@@ -18,7 +19,14 @@
     while not at_goal() :
         move_forward()
     
-
+    
+    
+    
+    
+    
+    
+    
+# Solution 2
 
     def turn_right():
         turn_left()
