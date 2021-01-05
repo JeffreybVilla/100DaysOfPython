@@ -72,20 +72,53 @@ https://www.askpython.com/python/python-functions
 
 
 ## Multiple return statements inside a Function?
-- Yes, a function have multiple return statements.
-- However, when one of the return statements is reached, the function execution terminates and value is returned to caller. 
+    - Yes, a function have multiple return statements.
+    - However, when one of the return statements is reached, the function execution terminates and value is returned to caller. 
 
-"""
-def odd_even_checker(i):
-    if i % 2 == 0:
-        return "even"
-    else:
-        return "odd"
+    """
+    def odd_even_checker(i):
+        if i % 2 == 0:
+            return "even"
+        else:
+            return "odd"
 
-print(odd_even_checker(20))
-print(odd_even_checker(15))
-"""
+    print(odd_even_checker(20))
+    print(odd_even_checker(15))
+    """
 
-OUTPUT:
-even
-odd
+    OUTPUT:
+    even
+    odd
+
+
+
+## Python Function Return Multiple Values 1 by 1?
+    - Yes, Python function can return multiple values one by one.
+    - To implement, use the **yield** keyword.
+    - Helpful when you want a function to return a large number of values and process them.
+    - We can split the returned values into multiple chunks using **yield** statement.
+    - This type of function is also called a generator function.
+
+    """
+    def return_odd_ints(i):
+        x = 1
+        while x <= i:
+            yield x
+            x += 2
+
+    output = return_odd_ints(10)
+
+    for out in output:
+        print(out)
+    """
+
+    OUTPUT:
+    1
+    3
+    5
+    7
+    9
+
+
+
+## Python Function Variable Arguments
