@@ -35,7 +35,7 @@ https://www.askpython.com/python/python-functions
 ## How to Call a Function in Python?
     - Call a function by its name.
     - If the function accepts parameters, we have to pass them while calling the function. 
-
+    
     """
     hello()
     sum = add(10, 5)
@@ -55,3 +55,37 @@ https://www.askpython.com/python/python-functions
 
 
 ## Can a Function have default parameter value?
+    - Python allows default values for the function parameters.
+    - If the caller doesn't pass the parameter, then the default value is used.
+
+    """
+    def hello(year = 2021):
+        print(f"Happy new year! #{year}")
+    hello(2020) # function parameter is passed
+    hello() # function parameter not passed, default value used
+    """
+
+    OUTPUT:
+    Happy new year! #2020
+    Happy new year! #2021
+   
+
+
+## Multiple return statements inside a Function?
+- Yes, a function have multiple return statements.
+- However, when one of the return statements is reached, the function execution terminates and value is returned to caller. 
+
+"""
+def odd_even_checker(i):
+    if i % 2 == 0:
+        return "even"
+    else:
+        return "odd"
+
+print(odd_even_checker(20))
+print(odd_even_checker(15))
+"""
+
+OUTPUT:
+even
+odd
