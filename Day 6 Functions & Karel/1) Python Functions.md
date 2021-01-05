@@ -33,5 +33,25 @@ https://www.askpython.com/python/python-functions
 
 
 ## How to Call a Function in Python?
-- Call a function by its name.
-- If the function accepts parameters, we have to pass them while calling the function. 
+    - Call a function by its name.
+    - If the function accepts parameters, we have to pass them while calling the function. 
+
+    """
+    hello()
+    sum = add(10, 5)
+    print(f"sum is {sum}"
+    """
+
+    - We are calling hello() & add() functions that are defined by us.
+    - Also calling print() function that is built-into Python.
+
+
+
+## Python Function Types
+    - 2 tpyes of funcitons in Python.
+    1. Built-in functions: Functions provided by the Python language such as print(), len(), int(), etc
+    2. User-defined functions: Functions defined by us in a Python program.
+
+
+
+## Can a Function have default parameter value?
