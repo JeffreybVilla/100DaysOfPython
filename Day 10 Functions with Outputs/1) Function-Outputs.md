@@ -29,3 +29,20 @@
         formated_l_name = l_name.title()
         return f"{formated_f_name} {formated_l_name}"
     print(format_name("jEffReY", "JEFFREY"))
+
+
+
+
+
+## Multiple return statements
+
+     def format_name(f_name, l_name):
+         #If user enters nothing, bypass return statement
+         #return will end the function
+         if f_name == "" or l_name == "":
+             return "\nNo valid input provided."
+         formated_f_name = f_name.title()
+         formated_l_name = l_name.title()
+         return f"\nYour name is: {formated_f_name} {formated_l_name}"
+
+     print(format_name(input("What is your first name? "), input("What is your last name? ")))
