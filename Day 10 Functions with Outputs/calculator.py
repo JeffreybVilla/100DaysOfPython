@@ -32,12 +32,24 @@ num1 = int(input("What's the first number?: "))
 for symbol in operations:
     print(symbol)
 
-operation_symbol = input("Pick an operation from the line above: ")
+user_operation = input("Pick an operation from the line above: ")
 
 num2 = int(input("What's the second number?: "))
 
-calculation_function = operations[operation_symbol]
+calculation_function = operations[user_operation]
 
-answer = calculation_function(num1, num2)
+first_answer = calculation_function(num1, num2)
 
-print(f"{num1} {operation_symbol} {num2} = {answer}")
+print(f"{num1} {user_operation} {num2} = {first_answer}")
+
+
+#Since the functions return the result you can re-use the output.
+#If you use print statements, cant use output to perform other calculation
+
+
+user_operation = input("Pick another operation: ")
+num3 = int(input("What's the next number?: "))
+calculation_function = operations[user_operation]
+second_answer = calculation_function(first_answer, num3)
+
+print(f"{first_answer} {user_operation} {num3} = {second_answer}")
