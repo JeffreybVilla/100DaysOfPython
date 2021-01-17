@@ -1,55 +1,77 @@
+from replit import clear
 from art import logo
-print(logo)
 
-
-#Add function that takes 2 inputs
 def add(n1, n2):
-    return n1 + n2
-
+  return n1 + n2
 
 def subtract(n1, n2):
-    return n1 - n2
-
+  return n1 - n2
 
 def multiply(n1, n2):
-    return n1 * n2
-
+  return n1 * n2
 
 def divide(n1, n2):
-    return n1 / n2
-
+  return n1 / n2
 
 operations = {
-    "+": add,
-    "-": subtract,
-    "*": multiply,
-    "/": divide,
+  "+": add,
+  "-": subtract,
+  "*": multiply,
+  "/": divide
 }
 
+def calculator():
+  print(logo)
 
-num1 = int(input("What's the first number?: "))
-
-for symbol in operations:
+  num1 = float(input("What's the first number?: "))
+  for symbol in operations:
     print(symbol)
+  should_continue = True
+ 
+  while should_continue:
+    operation_symbol = input("Pick an operation: ")
+    num2 = float(input("What's the next number?: "))
 
-user_operation = input("Pick an operation from the line above: ")
+    #setting new variable to the key of the dictionary, the symbol
+    calculation_function = operations[operation_symbol]
 
-num2 = int(input("What's the second number?: "))
+    #The key (operation symbol) is associated with a function that takes in 2 inputs
+    #Takes the inputs and performs a calculation.
+    answer = calculation_function(num1, num2)
 
-calculation_function = operations[user_operation]
+    print(f"{num1} {operation_symbol} {num2} = {answer}")
 
-first_answer = calculation_function(num1, num2)
+    if input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation: ") == 'y':
+      num1 = answer
+    else:
+      should_continue = False
+      clear()
+      calculator()
 
-print(f"{num1} {user_operation} {num2} = {first_answer}")
+calculator()
 
 
-#Since the functions return the result you can re-use the output.
-#If you use print statements, cant use output to perform other calculation
 
 
-user_operation = input("Pick another operation: ")
-num3 = int(input("What's the next number?: "))
-calculation_function = operations[user_operation]
-second_answer = calculation_function(first_answer, num3)
 
-print(f"{first_answer} {user_operation} {num3} = {second_answer}")
+
+
+
+
+
+logo = """
+ _____________________
+|  _________________  |
+| | Pythonista   0. | |  .----------------.  .----------------.  .----------------.  .----------------. 
+| |_________________| | | .--------------. || .--------------. || .--------------. || .--------------. |
+|  ___ ___ ___   ___  | | |     ______   | || |      __      | || |   _____      | || |     ______   | |
+| | 7 | 8 | 9 | | + | | | |   .' ___  |  | || |     /  \     | || |  |_   _|     | || |   .' ___  |  | |
+| |___|___|___| |___| | | |  / .'   \_|  | || |    / /\ \    | || |    | |       | || |  / .'   \_|  | |
+| | 4 | 5 | 6 | | - | | | |  | |         | || |   / ____ \   | || |    | |   _   | || |  | |         | |
+| |___|___|___| |___| | | |  \ `.___.'\  | || | _/ /    \ \_ | || |   _| |__/ |  | || |  \ `.___.'\  | |
+| | 1 | 2 | 3 | | x | | | |   `._____.'  | || ||____|  |____|| || |  |________|  | || |   `._____.'  | |
+| |___|___|___| |___| | | |              | || |              | || |              | || |              | |
+| | . | 0 | = | | / | | | '--------------' || '--------------' || '--------------' || '--------------' |
+| |___|___|___| |___| |  '----------------'  '----------------'  '----------------'  '----------------' 
+|_____________________|
+"""
