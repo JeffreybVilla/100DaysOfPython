@@ -41,7 +41,7 @@
 
 
 
-# Python Variable Scope Resolution Rules (LEGB)
+## Python Variable Scope Resolution Rules (LEGB)
 ![](https://github.com/JeffreybVilla/100DaysOfPython/blob/main/images/python-variable-scope-resolution-legb.png)
 
     Python variables are searched in this order of namespaces
